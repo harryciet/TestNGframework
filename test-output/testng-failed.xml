@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Test]">
+  <listeners>
+    <listener class-name="Maven.automation_project.Listener.AnnotationTransformer"/>
+  </listeners>
+  <test name="Login(failed)">
+    <classes>
+      <class name="Maven.automation_project.Smoke.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="close_browser"/>
+          <include name="Verify_User_is_not_Able_to_Login_With_Invalid_Password"/>
+        </methods>
+      </class> <!-- Maven.automation_project.Smoke.LoginTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Smoke Test] -->

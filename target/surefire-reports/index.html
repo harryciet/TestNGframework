@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Smoke_Test">
+              <span class="suite-name border-failed">Smoke Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Smoke_Test">
+                    <span>E:\Framework\automation_project\test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Smoke_Test">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Smoke_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Smoke_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Smoke_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Smoke_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Smoke_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 1 failed,  2 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Test" class="hide-methods failed suite-Smoke_Test"> (hide)</a> <!-- hide-methods failed suite-Smoke_Test -->
+                      <a href="#" panel-name="suite-Smoke_Test" class="show-methods failed suite-Smoke_Test"> (show)</a> <!-- show-methods failed suite-Smoke_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Invalid_Password">Verify_User_is_not_Able_to_Login_With_Invalid_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Smoke_Test" class="hide-methods skipped suite-Smoke_Test"> (hide)</a> <!-- hide-methods skipped suite-Smoke_Test -->
+                      <a href="#" panel-name="suite-Smoke_Test" class="show-methods skipped suite-Smoke_Test"> (show)</a> <!-- show-methods skipped suite-Smoke_Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-Smoke_Test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Invalid_Password">Verify_User_is_not_Able_to_Login_With_Invalid_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Invalid_Password">Verify_User_is_not_Able_to_Login_With_Invalid_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Smoke_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Smoke_Test" class="hide-methods passed suite-Smoke_Test"> (hide)</a> <!-- hide-methods passed suite-Smoke_Test -->
+                      <a href="#" panel-name="suite-Smoke_Test" class="show-methods passed suite-Smoke_Test"> (show)</a> <!-- show-methods passed suite-Smoke_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Smoke_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_Able_to_Login_With_Valid_Credentials">Verify_User_is_Able_to_Login_With_Valid_Credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.RegistrationTest" hash-for-method="Verify_User_is_able_Register_as_New_User">Verify_User_is_able_Register_as_New_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Blank_Credentials">Verify_User_is_not_Able_to_Login_With_Blank_Credentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Blank_Password">Verify_User_is_not_Able_to_Login_With_Blank_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.LoginTest" hash-for-method="Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress">Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="Maven.automation_project.Smoke.RegistrationTest" hash-for-method="Verify_User_is_not_able_to_Register_with_Already_Regitered_Email">Verify_User_is_not_able_to_Register_with_Already_Regitered_Email</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Smoke_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Smoke_Test" class="panel Smoke_Test">
+          <div class="suite-Smoke_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Maven.automation_project.Smoke.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Invalid_Password">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Invalid_Password -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invali password.] but found [Invalid password.]
+	at Maven.automation_project.Pages.LoginPage.login_invalid_pass(LoginPage.java:106)
+	at Maven.automation_project.Smoke.LoginTest.Verify_User_is_not_Able_to_Login_With_Invalid_Password(LoginTest.java:70)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test-class-failed -->
+          <div class="suite-Smoke_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Maven.automation_project.Smoke.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Invalid_Password">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Invalid_Password -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invali password.] but found [Invalid password.]
+	at Maven.automation_project.Pages.LoginPage.login_invalid_pass(LoginPage.java:106)
+	at Maven.automation_project.Smoke.LoginTest.Verify_User_is_not_Able_to_Login_With_Invalid_Password(LoginTest.java:70)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Invalid_Password">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Invalid_Password -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invali password.] but found [Invalid password.]
+	at Maven.automation_project.Pages.LoginPage.login_invalid_pass(LoginPage.java:106)
+	at Maven.automation_project.Smoke.LoginTest.Verify_User_is_not_Able_to_Login_With_Invalid_Password(LoginTest.java:70)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test-class-skipped -->
+          <div class="suite-Smoke_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Maven.automation_project.Smoke.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_able_Register_as_New_User">
+                  </a> <!-- Verify_User_is_able_Register_as_New_User -->
+                  <span class="method-name">Verify_User_is_able_Register_as_New_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_able_to_Register_with_Already_Regitered_Email">
+                  </a> <!-- Verify_User_is_not_able_to_Register_with_Already_Regitered_Email -->
+                  <span class="method-name">Verify_User_is_not_able_to_Register_with_Already_Regitered_Email</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test-class-passed -->
+          <div class="suite-Smoke_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Maven.automation_project.Smoke.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_Able_to_Login_With_Valid_Credentials">
+                  </a> <!-- Verify_User_is_Able_to_Login_With_Valid_Credentials -->
+                  <span class="method-name">Verify_User_is_Able_to_Login_With_Valid_Credentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Blank_Credentials">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Blank_Credentials -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Blank_Credentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Blank_Password">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Blank_Password -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Blank_Password</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress">
+                  </a> <!-- Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress -->
+                  <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test-class-passed -->
+        </div> <!-- panel Smoke_Test -->
+        <div panel-name="test-xml-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Framework\automation_project\test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Smoke Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Maven.automation_project.Listener.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Maven.automation_project.Smoke.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test name=&quot;Registration Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Maven.automation_project.Smoke.RegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Registration Test --&gt;
+&lt;/suite&gt; &lt;!-- Smoke Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Smoke Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Registration Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Smoke Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Smoke Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Smoke_Test');
+function tableData_Smoke_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Verify_User_is_able_Register_as_New_User')
+data.setCell(0, 2, 'Maven.automation_project.Smoke.RegistrationTest')
+data.setCell(0, 3, 12067);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Verify_User_is_Able_to_Login_With_Valid_Credentials')
+data.setCell(1, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(1, 3, 8554);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Verify_User_is_not_able_to_Register_with_Already_Regitered_Email')
+data.setCell(2, 2, 'Maven.automation_project.Smoke.RegistrationTest')
+data.setCell(2, 3, 3012);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress')
+data.setCell(3, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(3, 3, 2112);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Verify_User_is_not_Able_to_Login_With_Invalid_Password')
+data.setCell(4, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(4, 3, 1939);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Verify_User_is_not_Able_to_Login_With_Invalid_Password')
+data.setCell(5, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(5, 3, 1805);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Verify_User_is_not_Able_to_Login_With_Invalid_Password')
+data.setCell(6, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(6, 3, 1671);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Verify_User_is_not_Able_to_Login_With_Blank_Password')
+data.setCell(7, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(7, 3, 1656);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Verify_User_is_not_Able_to_Login_With_Blank_Credentials')
+data.setCell(8, 2, 'Maven.automation_project.Smoke.LoginTest')
+data.setCell(8, 3, 1464);
+window.suiteTableData['Smoke_Test']= { tableData: data, tableDiv: 'times-div-Smoke_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Smoke_Test">
+              </div> <!-- times-div-Smoke_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Smoke Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Smoke_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Maven.automation_project.Smoke.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_Able_to_Login_With_Valid_Credentials</span>
+                <span class="method-start">20179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Blank_Credentials</span>
+                <span class="method-start">28916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Blank_Password</span>
+                <span class="method-start">30382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_EmailAddress</span>
+                <span class="method-start">32040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                <span class="method-start">34155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                <span class="method-start">35832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_User_is_not_Able_to_Login_With_Invalid_Password</span>
+                <span class="method-start">37773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close_browser</span>
+                <span class="method-start">39595 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Maven.automation_project.Smoke.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40311 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_able_Register_as_New_User</span>
+                <span class="method-start">58345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_User_is_not_able_to_Register_with_Already_Regitered_Email</span>
+                <span class="method-start">70414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close_browser</span>
+                <span class="method-start">73427 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

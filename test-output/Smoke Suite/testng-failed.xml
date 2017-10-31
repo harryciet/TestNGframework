@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]">
+  <listeners>
+    <listener class-name="Maven.automation_project.Listener.listener_class"/>
+  </listeners>
+  <test name="Morning Test(failed)">
+    <classes>
+      <class name="Maven.automation_project.Smoke.RegistrationTest">
+        <methods>
+          <include name="close_browser"/>
+          <include name="accountLoginmethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Maven.automation_project.Smoke.RegistrationTest -->
+    </classes>
+  </test> <!-- Morning Test(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

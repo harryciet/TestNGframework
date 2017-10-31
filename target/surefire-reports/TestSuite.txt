@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 75.705 s <<< FAILURE! - in TestSuite
+Verify_User_is_not_Able_to_Login_With_Invalid_Password(Maven.automation_project.Smoke.LoginTest)  Time elapsed: 1.822 s  <<< FAILURE!
+java.lang.AssertionError: expected [Invali password.] but found [Invalid password.]
+	at Maven.automation_project.Smoke.LoginTest.Verify_User_is_not_Able_to_Login_With_Invalid_Password(LoginTest.java:70)
+

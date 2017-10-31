@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test">
+
+	<listeners>
+		<listener class-name="Maven.automation_project.Listener.listener_class"></listener>
+		<listener class-name="Maven.automation_project.Listener.AnnotationTransformer"></listener>
+	</listeners>
+	
+
+	 <test name="Login">
+		<classes>
+			<class name="Maven.automation_project.Smoke.LoginTest" />
+		</classes>
+	</test>
+	 <test name="Registration Test">
+		<classes>
+			<class name="Maven.automation_project.Smoke.RegistrationTest" />
+		</classes>
+	</test> 
+	<!-- <test name="Shopping Cart Test">
+		<classes>
+			<class name="Maven.automation_project.Smoke.ShoppingCartTest" />
+		</classes>
+	</test>
+	<test name="Enquiry Order Test">
+		<classes>
+			<class name="Maven.automation_project.Smoke.HomePageTest" />
+		</classes>
+
+	</test>
+ -->
+ 
+
+</suite> 
